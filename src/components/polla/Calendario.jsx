@@ -43,7 +43,7 @@ export const Calendario = () => {
               </TableCell>
               <TableCell align="right">
                 {moment(row.fecha, "DD-MM-YYYY")
-                  .set({ hour: row.hour + 8 })
+                  .set({ hour: row.hour - 8 })
                   .format("MMM D h:mm:ss a")}
               </TableCell>
             </TableRow>
